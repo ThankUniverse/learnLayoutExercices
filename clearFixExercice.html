@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>clearFix Hack</title>
+  </head>
+  <body>
+    <img src="images/EthanMatteTech.jpg" alt="erreur d'affichage">
+    <div class="clearfix">Oh oh... cette image est plus grande que l'élément qui la contient, et elle est flottante,
+       donc elle déborde de son conteneur !
+    </div>
+    <section>
+      Cet exemple marche aussi bien que le précédent. Remarquez que nous avons mis un clearfix sur le conteneur. Ce n'est pas nécessaire dans cet exemple,
+       mais ça le serait si la nav était plus longue que le contenu non flottant
+    </section>
+    <section>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor.
+         Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus.
+         Mauris quis diam velit.
+    </section>
+    <style>
+    img{
+      float: right;
+    }
+    .clearfix{
+        overflow: auto;
+      }
+    </style>
+  </body>
+</html>

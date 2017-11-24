@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Position</title>
+  </head>
+  <!--Pour des mise en page plus complexes,
+  nous devons parler de la propriété CSS position.
+  Elle a plusieurs valeurs possibles, et leurs noms n'ont aucun sens
+   et sont impossible à retenir. Voyons-les une par une, mais peut-être devriez-vous
+    ajouter cette page à vos favoris.
+    www.fr.learnlayout.com/position.html
+-->
+<style>
+  .static{
+    position: static;
+  }
+  .relative1{
+    position: relative;
+  }
+  .relative2{
+    position: relative;
+    top: -20px;
+    left: 20px;
+    border: 10px blue solid;
+    background-color: white;
+    width: 500px;
+    
+  }
+</style>
+  <body>
+    <div class="relative1">relative se comporte de la même façon que static sauf
+      si vous ajoutez quelques propriétés en plus.
+    </div>
+      <div class="relative2">Ajouter les propriétés top, right, bottom et left à un élément
+        positionné en relative va le placer ailleurs que sa position normale.
+        Le reste du contenu ne sera pas ajusté pour prendre la place dans l'espace laissé
+        par l'élément.
+      </div>
+        <div class="static">est la valeur par défaut de tous les éléments.
+          Un élément avec position static; n'est positionné d'aucune manière spéciale.
+          Un élément static est dit non positionné et un élément avec une propriété
+          position ayant une valeur autre que static est dit positionné.
+        </div>
+  </body>
+</html>

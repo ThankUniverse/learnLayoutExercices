@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>margin.auto</title>
+  </head>
+  <!--Attribué une width a un élément block-level l'empechera de
+s'étirer sur toute la largeur de son conteneur. Ensuite vous pouvez mettre la valeur auto aux propriétés margin-right et margin-left pour centrer horizontallement cet élément à l'intérieur de son conteneur. L'élément prendra la largeur que vous avez spécifié et l'espace restant sera séparé équitablement entre les deux marges.
+
+Le seul problème survient lorsque la fenêtre du navigateur est plus petite que la largeur de votre élément. Le navigateur résout cela en créant une barre de défilement (scrollbar) horizontale. Améliorons cette situation...-->
+<style>
+  #main{
+  width: 600px;
+  margin: 0 auto;
+  }
+</style>
+  <body>
+      <div id="main">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+      </div>
+  </body>
+</html>

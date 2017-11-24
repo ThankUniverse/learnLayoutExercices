@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Box Model</title>
+  </head>
+    <style>
+    .simple{
+      width: 500px;
+      margin: 20px auto;
+      border: solid red 10px;
+    /*Box sizing permet d'ajuster automatiquement les boites par défaut,
+    ainsi on peut appliquer des changements sans devoir calculé toutes
+    les marges d'une box --gain de temps*/
+              box-sizing: border-box;
+              /*---------------------------------*/
+    }
+    .fancy{
+      width: 500px;
+      margin: 20px auto;
+      padding: 50px;
+      border: solid blue 10px;
+     -webkit-box-sizing: border-box;
+         -moz-box-sizing: border-box;
+              box-sizing: border-box;
+
+    }
+    </style>
+  <body>
+    <div class="simple">
+      Je suis plus petit..
+    </div>
+      <div class="fancy">
+        Et je suis plus grand !
+      </div>
+
+  </body>
+</html>
