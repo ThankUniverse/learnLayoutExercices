@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Inline-block</title>
+  </head>
+  <body>
+    <div class="box">Je flotte !
+    </div>
+    <div class="box">Je flotte !
+    </div>
+    <div class="box">Je flotte !
+    </div>
+    <div class="box">Je flotte !
+    </div>
+    <div class="box">Je flotte !
+    </div>
+    <div class="box">Je flotte !
+    </div>
+    <div class="after-box">J'utilise clear pour
+      ne pas flotter à coté des boites au dessus.
+    <div class="box2">Je suis inline-block!
+    </div>
+    <div class="box2">Je suis inline-block!
+    </div>
+    <div class="box2">Je suis inline-block!
+    </div>
+    <div class="box2">Je suis inline-block!
+    </div>
+    <div class="box2">Je suis inline-block!
+    </div>
+    <div class="box2">Je suis inline-block!
+    </div>
+
+    <style>
+      .box {
+        float: left;
+        width: 200px;
+        height: 100px;
+        margin: 1em;
+      }
+      .after-box {
+        clear: left;
+      }
+      .box2 {
+        display: inline-block;
+        width: 200px;
+        height: 100px;
+        margin: 1em;
+      }
+    </style>
+
+  </body>
+</html>
